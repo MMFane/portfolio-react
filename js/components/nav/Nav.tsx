@@ -1,6 +1,6 @@
 import * as React from 'react';
-import '../../../styles/nav.css';
-import Button from '../presentational/Button';
+import './nav.css';
+import Button from '../button/Button';
 
 class Nav extends React.Component<any, any> {
   render() {
