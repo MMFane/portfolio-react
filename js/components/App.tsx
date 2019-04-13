@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Nav from './nav/Nav';
 import Hero from './hero/Hero';
+import { hot } from 'react-hot-loader/root'
 
 class App extends React.Component<any, any> {
 
@@ -15,4 +16,4 @@ class App extends React.Component<any, any> {
   }
 }
 
-export default App;
+export default hot(App);
