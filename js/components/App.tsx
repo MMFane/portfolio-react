@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Nav from './nav/Nav';
+import Hero from './hero/Hero';
 
 class App extends React.Component<any, any> {
 
@@ -7,7 +8,8 @@ class App extends React.Component<any, any> {
     return (
       <>
       <Nav />
-      <h1>Hi! I am your app</h1>
+      <h1>Portfolio</h1>
+      <Hero content="Hero Image" />
       </>
     );
   }
