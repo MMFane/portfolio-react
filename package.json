@@ -30,6 +30,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.3",
+    "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "typescript": "^3.4.3",
     "url-loader": "^1.1.2",
