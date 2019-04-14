@@ -13,12 +13,13 @@ module.exports = {
                 }
             },
             {
-                test: /\.html$/,
-                use: [
-                {
-                    loader: "html-loader"
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        attrs: [':data-src']
+                    }
                 }
-                ]
             },
             {
                 test: /\.tsx?$/,
@@ -27,6 +28,23 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
+            },
+            { 
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             },
         ]
     },
