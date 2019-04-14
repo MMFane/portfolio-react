@@ -1,15 +1,18 @@
 import * as React from 'react';
 import './banner.css';
-import { string } from 'prop-types';
 
-class Banner extends React.Component<any, any> {
+export interface BannerProps {
+    readonly content: any;
+}
+
+class Banner extends React.Component<BannerProps> {
   render() {
+    const content = this.props.content;
+
     return (
-        <>
-            <div className="banner">
-                <h2>{this.props.content}</h2>
-            </div>
-        </>
+        <div className="banner">
+            <h2>{content}</h2>
+        </div>
     );
   }
 }
