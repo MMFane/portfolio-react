@@ -26,42 +26,44 @@ module.exports = {
                 loader: 'awesome-typescript-loader'
             },
             {
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "source-map-loader"
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
-            },
-            { 
-                test: /\.(png|jpg|gif)$/i,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 8192
-                        }
-                    }
-                ]
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
-                    'file-loader'
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash].[ext]',
+                            outputPath: 'images'
+                        }
+                    }
                 ]
             },
         ]
     },
     devServer: {
-        contentBase: './dist'
+        contentBase: './public/dist'
     },
+    devtool: "source-map",
     plugins: [
         new HtmlWebPackPlugin({
-        template: "./src/index.html",
-        filename: "./index.html"
+            template: "./src/index.html",
+            filename: "./index.html"
         })
     ],
     resolve: {
         extensions: ['.ts', '.tsx', '.js']
     },
     output: {
-        path: path.join(__dirname, '/dist'),
-        filename: 'bundle.min.js'
+        path: path.join(__dirname, '/public/dist'),
+        filename: 'bundle.js',
+        publicPath: '/public'
     },
 };
