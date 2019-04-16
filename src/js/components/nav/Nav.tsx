@@ -17,7 +17,7 @@ class Nav extends React.Component<NavProps> {
             <FlexGroup classes="justify-center align-i-center">
                 <Button text="Projects" />
                 <Button text="Resume" />
-                <ResponsiveImage src={logo} width={25}/>
+                <ResponsiveImage classes="logo" src={logo} width={40}/>
                 <Button text="About" />
                 <Button text="Contact" />
             </FlexGroup>

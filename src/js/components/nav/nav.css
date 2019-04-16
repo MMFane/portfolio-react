@@ -1,4 +1,21 @@
+@import '../../../index.css';
+
 #nav {
-    padding: 1rem;
-    background-color: purple;
+    background-color: var(--color-red-dark);
+}
+
+#nav .logo {
+    margin: 0 1rem;
+}
+
+#nav .button {
+    color: white;
+    background-color: var(--color-red-dark);
+    border: none;
+    min-width: 100px;
+    height: 2.5rem;
+}
+
+#nav .button:nth-of-type(2n) {
+    border-left: 1px solid black;
 }

@@ -1,3 +1,8 @@
+:root {
+    --color-red: #ee2524;
+    --color-red-dark: #8c1919;
+}
+
 body {
     margin: 0;
 }
