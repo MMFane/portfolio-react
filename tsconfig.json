@@ -13,6 +13,7 @@
       "allowSyntheticDefaultImports": false,
       "jsx": "react",
       "allowJs": true,
+      "esModuleInterop": true,
       "baseUrl": "./",
       "paths": {
         "components/*": [

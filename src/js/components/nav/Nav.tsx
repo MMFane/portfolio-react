@@ -3,6 +3,7 @@ import './nav.css';
 import Button from '../button/Button';
 import FlexGroup from '../flex-group/FlexGroup';
 import ResponsiveImage from '../responsive-image/ResponsiveImage';
+import logo from '../../../images/Signature.png';
 
 export interface NavProps {
 
@@ -10,8 +11,6 @@ export interface NavProps {
 
 class Nav extends React.Component<NavProps> {
   render() {
-    const logo = require('../../../images/Signature.png');
-
     return (
         <div id="nav">
             <FlexGroup classes="justify-center align-i-center">
