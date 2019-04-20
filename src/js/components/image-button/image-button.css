@@ -1,7 +1,9 @@
 .image-button {
-    width: 100px;
-    height: 100px;
-    background-color: purple;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.25s ease;
 }
 

@@ -29,6 +29,14 @@ body {
     margin-right: 3rem;
 }
 
+.ml-3 {
+    margin-left: 3rem;
+}
+
 .mt-1 {
     margin-top: 1rem;
+}
+
+.w-100 {
+    width: 100vw;
 }
