@@ -2,9 +2,40 @@
     width: 100%;
     height: 250px;
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero.first {
+    z-index: 2;
+}
+
+.hero.second {
+    margin-top: -3.5rem;
+}
+
+.hero.second .hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1541512416146-3cf58d6b27cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=754&q=80');
+}
+
+.hero h1,
+.hero h2 {
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin: 0.6rem;
 }
 
 .hero-bg,
+.hero-content,
 .hero-color,
 .hero-content {
     width: 100%;
@@ -14,9 +45,14 @@
 
 .hero-content {
     z-index: 3;
-    top: 40%;
+    width: 50%;
+    height: 90%;
+    left: 25%;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-bg {
@@ -26,8 +62,17 @@
     background-image: url('https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-.hero-color {
-    background-color: red;
+.bg-chalkboard {
+    background-image: url('../../../images/bg-chalkboard.jpg')
+}
+
+.hero.small {
+    height: 150px;
+}
+
+.hero.large {
+    height: 350px;
 }
