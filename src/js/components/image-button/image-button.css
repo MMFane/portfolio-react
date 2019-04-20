@@ -1,0 +1,28 @@
+.image-button {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 0.25s ease;
+}
+
+.image-button .text {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    transition-delay: 100ms;
+}
+
+.image-button:hover .text {
+    opacity: 1;
+}
+
+.image-button:hover {
+    transform: scale(1.1);
+}
+
+.image-button.first:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.image-button.last:hover {
+    transform: scale(1.1) rotate(3deg);
+}
