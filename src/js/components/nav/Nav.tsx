@@ -3,7 +3,7 @@ import './nav.css';
 import Button from '../button/Button';
 import FlexGroup from '../flex-group/FlexGroup';
 import ResponsiveImage from '../responsive-image/ResponsiveImage';
-import logo from '../../../images/Signature.png';
+import logo from '../../../images/signature.png';
 
 export interface NavProps {
 
