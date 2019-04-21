@@ -25,7 +25,7 @@ class Hero extends React.Component<any, any> {
                 <div className="hero-content">
                     { children }
                 </div>
-                <div className={`hero-bg ${image ? "bg-"+image : ''}`}></div>
+                <div className={`hero-bg fixed-bg ${image ? "bg-"+image : ''}`}></div>
                 <div className={`hero-color ${color ? color : ''}`}></div>
             </div>
         </>

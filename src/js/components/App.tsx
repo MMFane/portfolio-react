@@ -34,17 +34,21 @@ class App extends React.Component<any, any> {
             </FlexGroup>
             </div>
         </Hero>
-        <Banner classes="">
+        <Banner classes="" bgImage="" bgColor="red">
             <h2>Spacer</h2>
         </Banner>
-        <Banner classes="">
+        <Banner classes="" bgImage="" bgColor="black">
             <h2>Spacer</h2>
         </Banner>
-        <Banner classes="">
+        <Banner classes="" bgImage="" bgColor="dark-red">
             <h2>Spacer</h2>
         </Banner>
-        <Banner classes="footer">
-            <h2>Footer</h2>
+        <Banner classes="social angle-top-right fixed-bg" bgImage="chalkboard" bgColor="">
+            <p>(740) 591-7429</p>
+            <a href="mailto:sam.erin.yeager@gmail.com">sam.erin.yeager@gmail.com</a>
+        </Banner>
+        <Banner classes="footer angle-top-left" bgImage="" bgColor="dark-red">
+            <p>© 2018-2019 Sam Yeager | <a href="https://github.com/MMFane/portfolio-react">Check out the code on GitHub</a> </p>
         </Banner>
         </>
     );
