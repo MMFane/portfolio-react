@@ -28,9 +28,9 @@ class App extends React.Component<any, any> {
         <Hero classes="second" angle="" height="x-large" color="black" image="casino">
             <div className="content">
             <FlexGroup classes="justify-center align-i-center mt-1 w-100">
-                <ImageButton classes="first" image={headerWTCasino} text="WildTangent Casino"/>
+                <ImageButton classes="" image={headerWTCasino} text="WildTangent Casino"/>
                 <ImageButton classes="" image={headerSpellSlingers} text="SpellSlingers"/>
-                <ImageButton classes="last" image={headerStellarFortune} text="Stellar Fortune"/>
+                <ImageButton classes="" image={headerStellarFortune} text="Stellar Fortune"/>
             </FlexGroup>
             </div>
         </Hero>

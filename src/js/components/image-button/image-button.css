@@ -20,11 +20,3 @@
 .image-button:hover {
     transform: scale(1.1);
 }
-
-.image-button.first:hover {
-    transform: scale(1.1) rotate(-3deg);
-}
-
-.image-button.last:hover {
-    transform: scale(1.1) rotate(3deg);
-}
