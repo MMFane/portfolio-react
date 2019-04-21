@@ -1,3 +1,5 @@
+@import '../../../index.css';
+
 .banner {
     width: 100%;
     height: 100px;
@@ -5,4 +7,12 @@
     color: white;
     background-color: blue;
     text-align: center;
+}
+
+.footer {
+    background-color: var(--color-black)
+}
+
+.footer h2 {
+    margin-bottom: 0;
 }

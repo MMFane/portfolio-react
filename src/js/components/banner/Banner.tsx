@@ -2,16 +2,17 @@ import * as React from 'react';
 import './banner.css';
 
 export interface BannerProps {
-    readonly content: any;
+    readonly classes: string;
 }
 
 class Banner extends React.Component<BannerProps> {
   render() {
-    const content = this.props.content;
+    const children = this.props.children;
+    const classes = this.props.classes;
 
     return (
-        <div className="banner">
-            <h2>{content}</h2>
+      <div className={`banner ${classes ? classes : ''}`}>
+            {children}
         </div>
     );
   }
