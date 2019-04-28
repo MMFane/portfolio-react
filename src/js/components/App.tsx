@@ -8,6 +8,12 @@ import ImageButton from './image-button/ImageButton';
 import Nav from './nav/Nav';
 import ResponsiveImage from './responsive-image/ResponsiveImage';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+library.add(faEnvelopeSquare, faTwitter, faInstagram, faFacebook);
+
 import logo from '../../images/signature.png';
 import headerWTCasino from '../../images/project-headers/header-wildtangent-casino.png';
 import headerSpellSlingers from '../../images/project-headers/header-spellslingers.png';
@@ -44,8 +50,21 @@ class App extends React.Component<any, any> {
             <h2>Spacer</h2>
         </Banner>
         <Banner classes="social angle-top-right fixed-bg" bgImage="chalkboard" bgColor="">
+            <FlexGroup classes="justify-center align-i-center mt-1">
+                    <a href="mailto:sam.erin.yeager@gmail.com">
+                        <FontAwesomeIcon icon={faEnvelopeSquare} size="lg" className="mr-1" />
+                    </a>
+                    <a href="https://twitter.com/M_M_Fane">
+                        <FontAwesomeIcon icon={faTwitter} size="lg" className="mr-1" />
+                    </a>
+                    <a href="https://www.instagram.com/mmfane/">
+                        <FontAwesomeIcon icon={faInstagram} size="lg" className="mr-1" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/samerinyeager">
+                        <FontAwesomeIcon icon={faFacebook} size="lg" />
+                    </a>
+            </FlexGroup>
             <p>(740) 591-7429</p>
-            <a href="mailto:sam.erin.yeager@gmail.com">sam.erin.yeager@gmail.com</a>
         </Banner>
         <Banner classes="footer angle-top-left" bgImage="" bgColor="dark-red">
             <p>© 2018-2019 Sam Yeager | <a href="https://github.com/MMFane/portfolio-react">Check out the code on GitHub</a> </p>
