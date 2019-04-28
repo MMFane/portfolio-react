@@ -28,7 +28,7 @@ class App extends React.Component<any, any> {
             <div className="content mt-1">
                 <ResponsiveImage classes="logo" src={logo} width={100}/>
                 <h1>Samantha Yeager</h1>
-                <h2><em>UI / UX Designer</em></h2>
+                <h2 className="dark-white"><em>UI / UX Designer</em></h2>
             </div>
         </Hero>
         <Hero classes="second" angle="" height="x-large" color="black" image="casino">
