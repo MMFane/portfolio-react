@@ -1,19 +1,21 @@
 import * as React from 'react';
+import { Route, NavLink, HashRouter } from "react-router-dom";
 import { hot } from 'react-hot-loader/root';
 
 import Banner from './banner/Banner';
 import FlexGroup from './flex-group/FlexGroup';
+import Gallery from './gallery/Gallery';
 import Hero from './hero/Hero';
-import Section from './section/Section';
 import ImageButton from './image-button/ImageButton';
 import Nav from './nav/Nav';
 import ResponsiveImage from './responsive-image/ResponsiveImage';
+import Section from './section/Section';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-library.add(faEnvelopeSquare, faTwitter, faInstagram, faLinkedin);
+// import { } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+library.add(faTwitter, faInstagram, faLinkedin);
 
 import logo from '../../images/signature.png';
 import headerWTCasino from '../../images/project-headers/header-wildtangent-casino.png';
@@ -25,20 +27,34 @@ class App extends React.Component<any, any> {
     return (
         <>
         <Nav />
-         <Section classes="" image="chalkboard">
+         <Section classes="fixed-bg" color="black" image="chalkboard">
             <div className="content">
-                <FlexGroup classes="column align-center">
+                <FlexGroup id="" classes="column align-center">
                     <ResponsiveImage classes="logo" src={logo} width={100} />
                     <h1>Samantha Yeager</h1>
                     <h2 className="dark-white"><em>UI / UX Designer</em></h2>
                 </FlexGroup>
-                <FlexGroup classes="justify-center align-i-center mt-1 w-100">
-                    <ImageButton classes="" image={headerWTCasino} text="WildTangent Casino" />
-                    <ImageButton classes="" image={headerSpellSlingers} text="SpellSlingers" />
-                    <ImageButton classes="" image={headerStellarFortune} text="Stellar Fortune" />
-                </FlexGroup>
+                <HashRouter>
+                    <FlexGroup id="gallery-links" classes="justify-center align-i-center mt-1 w-100">
+                        <NavLink to ="/wildtangent-casino">
+                            <ImageButton classes="" image={headerWTCasino} text="WildTangent Casino" />
+                        </NavLink>
+                        <NavLink to="/spellslingers">
+                            <ImageButton classes="" image={headerSpellSlingers} text="SpellSlingers" />
+                        </NavLink>
+                        <NavLink to="/stellar-fortune">
+                            <ImageButton classes="" image={headerStellarFortune} text="Stellar Fortune" />
+                        </NavLink>
+                    </FlexGroup>
+                    <div id="router-content">
+                        <Route path="/wildtangent-casino" render={() => <Gallery classes="">WildTangent Casino Gallery</Gallery>} />
+                        <Route path="/spellslingers" render={() => <Gallery classes="">SpellSlingers Gallery</Gallery>} />
+                        <Route path="/stellar-fortune" render={() => <Gallery classes="">Stellar Fortune Gallery</Gallery>} />
+                    </div>
+                </HashRouter>
             </div>
         </Section>
+
         <Banner classes="" bgImage="" bgColor="red">
             <h2>Spacer</h2>
         </Banner>
@@ -49,7 +65,7 @@ class App extends React.Component<any, any> {
             <h2>Spacer</h2>
         </Banner>
         <Banner classes="social angle-top-right fixed-bg" bgImage="chalkboard" bgColor="">
-            <FlexGroup classes="justify-center align-i-center mt-1">
+            <FlexGroup id="" classes="justify-center align-i-center mt-1">
                     <a href="https://www.instagram.com/mmfane/">
                         <FontAwesomeIcon icon={faInstagram} size="lg" className="mr-1" />
                     </a>

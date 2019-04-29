@@ -13,7 +13,7 @@ class Nav extends React.Component<NavProps> {
   render() {
     return (
         <div id="nav">
-            <FlexGroup classes="justify-center align-i-center">
+            <FlexGroup id="" classes="justify-center align-i-center">
                 <Button text="Projects" />
                 <Button text="Resume" />
                 <ResponsiveImage classes="logo" src={logo} width={40}/>
