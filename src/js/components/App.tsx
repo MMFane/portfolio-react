@@ -11,6 +11,10 @@ import Nav from './nav/Nav';
 import ResponsiveImage from './responsive-image/ResponsiveImage';
 import Section from './section/Section';
 
+import GalleryWTC from './instances/gallery-wildtangent-casino/GalleryWTC';
+import GallerySS from './instances/gallery-spellslingers/GallerySS';
+import GallerySF from './instances/gallery-stellar-fortune/GallerySF';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { } from '@fortawesome/free-solid-svg-icons';
@@ -47,9 +51,9 @@ class App extends React.Component<any, any> {
                         </NavLink>
                     </FlexGroup>
                     <div id="router-content">
-                        <Route path="/wildtangent-casino" render={() => <Gallery classes="">WildTangent Casino Gallery</Gallery>} />
-                        <Route path="/spellslingers" render={() => <Gallery classes="">SpellSlingers Gallery</Gallery>} />
-                        <Route path="/stellar-fortune" render={() => <Gallery classes="">Stellar Fortune Gallery</Gallery>} />
+                        <Route  path="/wildtangent-casino" render={() => <GalleryWTC classes=""/> } />
+                        <Route path="/spellslingers" render={() => <GallerySS classes="" /> } />
+                        <Route path="/stellar-fortune" render={() => <GallerySF classes="" /> } />
                     </div>
                 </HashRouter>
             </div>

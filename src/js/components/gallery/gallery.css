@@ -7,3 +7,12 @@
     padding: 2rem;
     text-align: center;
 }
+
+.gallery li {
+    width: 30%; 
+    list-style-type: none;
+}
+
+.gallery img {
+    width: 100%;
+}
