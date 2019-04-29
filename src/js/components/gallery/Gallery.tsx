@@ -3,9 +3,10 @@ import Masonry from 'react-masonry-component';
 import './gallery.css';
 
 const masonryOptions = {
-    transitionDuration: 0
+    gutter: 10,
+    stagger: '0.02s',
+    transitionDuration: '0.4s',
 };
-
 
 export interface GalleryProps {
     readonly classes: string;
@@ -33,7 +34,6 @@ class Gallery extends React.Component<GalleryProps> {
                 options={masonryOptions}
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
-                // imagesLoadedOptions={imagesLoadedOptions}
             >
                 {childElements}
             </Masonry>
