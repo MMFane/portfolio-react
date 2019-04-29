@@ -1,0 +1,9 @@
+.gallery {
+    color: white;
+    background-color: purple;
+    width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+}

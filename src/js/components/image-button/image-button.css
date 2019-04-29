@@ -8,6 +8,11 @@
 }
 
 .image-button .text {
+    color: white;
+    text-decoration: none;
+    padding: 0.35rem 1rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     opacity: 0;
     transition: opacity 0.25s ease;
     transition-delay: 100ms;

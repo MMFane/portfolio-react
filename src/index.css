@@ -10,6 +10,19 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+/* routing */
+#gallery-links a {
+    text-decoration: none;
+}
+
+#gallery-links a.active .text {
+    opacity: 1;
+    border: 2px solid white;
+}
+
+#gallery-links a.active img {
+}
+
 /* colors */
 
 .dark-white {
