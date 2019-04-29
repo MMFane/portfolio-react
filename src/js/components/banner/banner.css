@@ -12,6 +12,21 @@
     padding: 2rem;
 }
 
+.social, .social a {
+    color: var(--color-white-dark);
+    text-decoration: none;
+}
+
+.social p a {
+    border-bottom: 1px solid var(--color-white-dark);
+    padding-bottom: 2px;
+}
+
+.social a:hover {
+    color: white;
+    border-color: white;
+}
+
 .footer {
     margin-top: -2rem;
 }

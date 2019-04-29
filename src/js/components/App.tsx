@@ -51,9 +51,6 @@ class App extends React.Component<any, any> {
         </Banner>
         <Banner classes="social angle-top-right fixed-bg" bgImage="chalkboard" bgColor="">
             <FlexGroup classes="justify-center align-i-center mt-1">
-                    <a href="mailto:sam.erin.yeager@gmail.com">
-                        <FontAwesomeIcon icon={faEnvelopeSquare} size="lg" className="mr-1" />
-                    </a>
                     <a href="https://twitter.com/M_M_Fane">
                         <FontAwesomeIcon icon={faTwitter} size="lg" className="mr-1" />
                     </a>
@@ -64,7 +61,12 @@ class App extends React.Component<any, any> {
                         <FontAwesomeIcon icon={faFacebook} size="lg" />
                     </a>
             </FlexGroup>
-            <p>(740) 591-7429</p>
+            <p>
+                <a href="tel:+1-740-591-7429">+1 (740) 591-7429</a>
+            </p>
+            <p>
+                <a href="mailto:sam.erin.yeager@gmail.com">sam.erin.yeager@gmail.com</a>
+            </p>
         </Banner>
         <Banner classes="footer angle-top-left" bgImage="" bgColor="dark-red">
             <p>© 2018-2019 Sam Yeager | <a href="https://github.com/MMFane/portfolio-react">Check out the code on GitHub</a> </p>

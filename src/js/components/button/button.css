@@ -1,9 +1,1 @@
 @import '../../../index.css';
-
-.social, .social a {
-    color: var(--color-white-dark);
-}
-
-.social a:hover {
-    color: white;
-}
