@@ -11,8 +11,8 @@ import ResponsiveImage from './responsive-image/ResponsiveImage';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-library.add(faEnvelopeSquare, faTwitter, faInstagram, faFacebook);
+import { faTwitter, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+library.add(faEnvelopeSquare, faTwitter, faInstagram, faLinkedin);
 
 import logo from '../../images/signature.png';
 import headerWTCasino from '../../images/project-headers/header-wildtangent-casino.png';
@@ -51,14 +51,14 @@ class App extends React.Component<any, any> {
         </Banner>
         <Banner classes="social angle-top-right fixed-bg" bgImage="chalkboard" bgColor="">
             <FlexGroup classes="justify-center align-i-center mt-1">
-                    <a href="https://twitter.com/M_M_Fane">
-                        <FontAwesomeIcon icon={faTwitter} size="lg" className="mr-1" />
-                    </a>
                     <a href="https://www.instagram.com/mmfane/">
                         <FontAwesomeIcon icon={faInstagram} size="lg" className="mr-1" />
                     </a>
                     <a href="https://www.linkedin.com/in/samerinyeager">
-                        <FontAwesomeIcon icon={faFacebook} size="lg" />
+                        <FontAwesomeIcon icon={faLinkedin} size="lg" className="mr-1" />
+                    </a>
+                    <a href="https://twitter.com/M_M_Fane">
+                        <FontAwesomeIcon icon={faTwitter} size="lg"/>
                     </a>
             </FlexGroup>
             <p>
