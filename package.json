@@ -19,6 +19,7 @@
     "@types/node": "^11.13.4",
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
+    "react-masonry-component": "^6.2.1",
     "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
