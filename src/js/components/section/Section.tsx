@@ -7,7 +7,7 @@ export interface SectionProps {
     readonly image: string;
 }
 
-class Section extends React.Component<any, any> {
+class Section extends React.Component<SectionProps> {
     render() {
 
         const children = this.props.children;

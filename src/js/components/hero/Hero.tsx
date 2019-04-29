@@ -9,7 +9,7 @@ export interface HeroProps {
   readonly image: string;
 }
 
-class Hero extends React.Component<any, any> {
+class Hero extends React.Component<HeroProps> {
   render() {
 
     const children = this.props.children;
